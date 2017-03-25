@@ -1,0 +1,928 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>视频新闻</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!--视频轮播图导入文件-->
+    <link rel="stylesheet" href="css/lunbotu-style.css">
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+    <script type="text/javascript" src="js/lunbotu-function.js"></script>
+    <!--引入鼠标点击的video的css效果-->
+    <link rel="stylesheet" href="css/video-fun.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--视频轮播图导入文件结束-->
+
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<header>
+    <!--Top-->
+    <nav id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 ">
+                    <strong>苍溪发布</strong>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <ul class="list-inline top-link link">
+                        <li><a href="demo.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a href="demo.html"><i class="fa fa-comments"></i> 联系我们</a></li>
+                        <li><a href="#"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Navigation-->
+    <nav id="menu" class="navbar">
+        <div class="container">
+            <div class="navbar-header"><span id="heading" class="visible-xs">分类</span>
+                <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="demo.html"><i class="fa fa-home"></i> Home</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> 账户</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-inner">
+                                <ul class="list-unstyled">
+                                    <li><a href="archive.html">Login</a></li>
+                                    <li><a href="archive.html">Register</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-play-circle-o"></i> 视频</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-inner">
+                                <ul class="list-unstyled">
+                                    <li><a href="archive.html">Text 201</a></li>
+                                    <li><a href="archive.html">Text 202</a></li>
+                                    <li><a href="archive.html">Text 203</a></li>
+                                    <li><a href="archive.html">Text 204</a></li>
+                                    <li><a href="archive.html">Text 205</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list"></i> Category</a>
+                        <div class="dropdown-menu" style="margin-left: -203.625px;">
+                            <div class="dropdown-inner">
+                                <ul class="list-unstyled">
+                                    <li><a href="archive.html">Text 301</a></li>
+                                    <li><a href="archive.html">Text 302</a></li>
+                                    <li><a href="archive.html">Text 303</a></li>
+                                    <li><a href="archive.html">Text 304</a></li>
+                                    <li><a href="archive.html">Text 305</a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li><a href="archive.html">Text 306</a></li>
+                                    <li><a href="archive.html">Text 307</a></li>
+                                    <li><a href="archive.html">Text 308</a></li>
+                                    <li><a href="archive.html">Text 309</a></li>
+                                    <li><a href="archive.html">Text 310</a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li><a href="archive.html">Text 311</a></li>
+                                    <li><a href="archive.html">Text 312</a></li>
+                                    <li><a href="archive.html#">Text 313</a></li>
+                                    <li><a href="archive.html#">Text 314</a></li>
+                                    <li><a href="archive.html">Text 315</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="archive.html"><i class="fa fa-cubes"></i> 社区</a></li>
+                    <li><a href="contact.html"><i class="fa fa-envelope"></i> 联系</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<!--轮播图-->
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
+
+
+            <div data-p="144.50" style="display: none;" class="zoom-container" ><!--加一个zoom-container的属性-->
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag-->
+                <div class="zoom-caption">
+                    <span class="visible-lg visible-md h3" style="font-size: 30px">33333</span>
+                    <span class="visible-xs h3" style="font-size: 60px">11111</span>
+                    <span class="visible-sm h3" style="font-size: 50px">222222</span>
+                    <a href="jQuery-video2/index.html">
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                    </a>
+                    <p>两会召开顺利进行说法是范</p>
+                </div>
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag end-->
+                <img data-u="image" src="img/01.jpg" />
+                <img data-u="thumb" src="img/thumb-01.jpg" />
+            </div>
+
+
+            <div data-p="144.50" style="display: none;" class="zoom-container">
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag-->
+                <div class="zoom-caption">
+                    <span class="visible-lg visible-md h3" style="font-size: 30px">33333</span>
+                   <span class="visible-xs h3" style="font-size: 60px">11111</span>
+                    <span class="visible-sm h3" style="font-size: 50px">222222</span>
+                    <a href="jQuery-video/index.html">
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                    </a>
+                    <p>两会召开顺利进行说法是范</p>
+                </div>
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag end-->
+                <img data-u="image" src="img/02.jpg" />
+                <img data-u="thumb" src="img/thumb-02.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;" class="zoom-container">
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag-->
+                <div class="zoom-caption">
+                    <span class="visible-lg visible-md h3" style="font-size: 30px">33333</span>
+                   <span class="visible-xs h3" style="font-size: 60px">11111</span>
+                    <span class="visible-sm h3" style="font-size: 50px">222222</span>
+                    <a href="jQuery-video/index.html">
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                    </a>
+                    <p>两会召开顺利进行说法是范</p>
+                </div>
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag end-->
+                <img data-u="image" src="img/03.jpg" />
+                <img data-u="thumb" src="img/thumb-03.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;" class="zoom-container">
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag-->
+                <div class="zoom-caption">
+                    <span class="visible-lg visible-md h3" style="font-size: 30px">33333</span>
+                   <span class="visible-xs h3" style="font-size: 60px">11111</span>
+                    <span class="visible-sm h3" style="font-size: 50px">222222</span>
+                    <a href="jQuery-video/index.html">
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                    </a>
+                    <p>两会召开顺利进行说法是范</p>
+                </div>
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag end-->
+                <img data-u="image" src="img/04.jpg" />
+                <img data-u="thumb" src="img/thumb-04.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;" class="zoom-container">
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag-->
+                <div class="zoom-caption">
+                    <span class="visible-lg visible-md h3" style="font-size: 30px">33333</span>
+                   <span class="visible-xs h3" style="font-size: 60px">11111</span>
+                    <span class="visible-sm h3" style="font-size: 50px">222222</span>
+                    <a href="jQuery-video/index.html">
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                    </a>
+                    <p>两会召开顺利进行说法是范</p>
+                </div>
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag end-->
+                <img data-u="image" src="img/05.jpg" />
+                <img data-u="thumb" src="img/thumb-05.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;" class="zoom-container">
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag-->
+                <div class="zoom-caption">
+                    <span class="visible-lg visible-md h3" style="font-size: 30px">33333</span>
+                   <span class="visible-xs h3" style="font-size: 60px">11111</span>
+                    <span class="visible-sm h3" style="font-size: 50px">222222</span>
+                    <a href="jQuery-video/index.html">
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                    </a>
+                    <p>两会召开顺利进行说法是范</p>
+                </div>
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag end-->
+                <img data-u="image" src="img/06.jpg" />
+                <img data-u="thumb" src="img/thumb-06.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;" class="zoom-container">
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag-->
+                <div class="zoom-caption">
+                    <span class="visible-lg visible-md h3" style="font-size: 30px">33333</span>
+                   <span class="visible-xs h3" style="font-size: 60px">11111</span>
+                    <span class="visible-sm h3" style="font-size: 50px">222222</span>
+                    <a href="jQuery-video/index.html">
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                    </a>
+                    <p>两会召开顺利进行说法是范</p>
+                </div>
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag end-->
+                <img data-u="image" src="img/07.jpg" />
+                <img data-u="thumb" src="img/thumb-07.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;" class="zoom-container">
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag-->
+                <div class="zoom-caption">
+                    <span class="visible-lg visible-md h3" style="font-size: 30px">33333</span>
+                   <span class="visible-xs h3" style="font-size: 60px">11111</span>
+                    <span class="visible-sm h3" style="font-size: 50px">222222</span>
+                    <a href="jQuery-video/index.html">
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                    </a>
+                    <p>两会召开顺利进行说法是范</p>
+                </div>
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag end-->
+                <img data-u="image" src="img/08.jpg" />
+                <img data-u="thumb" src="img/thumb-08.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;" class="zoom-container">
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag-->
+                <div class="zoom-caption">
+                    <span class="visible-lg visible-md h3" style="font-size: 30px">33333</span>
+                    <span class="visible-xs h3" style="font-size: 60px">11111</span>
+                    <span class="visible-sm h3" style="font-size: 50px">222222</span>
+                    <a href="jQuery-video/index.html">
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                    </a>
+                    <p>两会召开顺利进行说法是范</p>
+                </div>
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag end-->
+                <img data-u="image" src="img/09.jpg" />
+                <img data-u="thumb" src="img/thumb-09.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;" class="zoom-container">
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag-->
+                <div class="zoom-caption">
+                    <span class="visible-lg visible-md h3" style="font-size: 30px">33333</span>
+                   <span class="visible-xs h3" style="font-size: 60px">11111</span>
+                    <span class="visible-sm h3" style="font-size: 50px">222222</span>
+                    <a href="jQuery-video/index.html">
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                    </a>
+                    <p>两会召开顺利进行说法是范</p>
+                </div>
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag end-->
+                <img data-u="image" src="img/10.jpg" />
+                <img data-u="thumb" src="img/thumb-10.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;" class="zoom-container">
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag-->
+                <div class="zoom-caption">
+                    <span class="visible-lg visible-md h3" style="font-size: 30px">33333</span>
+                   <span class="visible-xs h3" style="font-size: 60px">11111</span>
+                    <span class="visible-sm h3" style="font-size: 50px">222222</span>
+                    <a href="jQuery-video/index.html">
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                    </a>
+                    <p>两会召开顺利进行说法是范</p>
+                </div>
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag end-->
+                <img data-u="image" src="img/11.jpg" />
+                <img data-u="thumb" src="img/thumb-11.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;" class="zoom-container">
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag-->
+                <div class="zoom-caption">
+                    <span class="visible-lg visible-md h3" style="font-size: 30px">33333</span>
+                   <span class="visible-xs h3" style="font-size: 60px">11111</span>
+                    <span class="visible-sm h3" style="font-size: 50px">222222</span>
+                    <a href="jQuery-video/index.html">
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                        <!--用来控制鼠标放上去时候的动画字体定义-->
+                    </a>
+                    <p>两会召开顺利进行说法是范</p>
+                </div>
+                <!--这里是给轮播图加一个mask鼠标点击产生video动画，还有左上角的tag end-->
+                <img data-u="image" src="img/12.jpg" />
+                <img data-u="thumb" src="img/thumb-12.jpg" />
+            </div>
+        </div>
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
+            <!-- Thumbnail Item Skin Begin -->
+            <div data-u="slides" style="cursor: default;">
+                <div data-u="prototype" class="p">
+                    <div class="w">
+                        <div data-u="thumbnailtemplate" class="t"></div>
+                    </div>
+                    <div class="c"></div><!--用来设置选中图片的十字叉和边框效果-->
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
+        <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
+
+    </div>
+<!--轮播图结束-->
+    </header>
+    <!-- Header -->
+
+
+
+
+<!-- /////////////////////////////////////////Content -->
+<div id="page-content" class="index-page">
+
+    <div class="container">
+        <div class="row">
+            <div id="main-content" class="col-md-8">
+                <div class="box">
+                    <div class="box-header">
+                        <h2><i class="fa fa-globe"></i> Featured Videos</h2>
+                    </div>
+                    <div class="box-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+                                            <a href="jQuery-video/index.html">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name1</p>
+                                        </div>
+                                        <img src="images/7.jpg" />
+                                    </div>
+                                    <h3 class="vid-name"><a href="#">Video's Name</a></h3>
+                                    <div class="info">
+                                        <h5>By <a href="#">Kelvin</a></h5>
+                                        <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                        <span><i class="fa fa-heart"></i>1,200</span>
+                                    </div>
+                                </div>
+                                <p class="more">一、两会视频3月11日晚，中共中央统战部、全国人大民族委员会、国家民族事务委员会、党和国家领导人习近平、李克强、张德江、俞正声、刘云山、王岐山、张高丽等与出席十二届全国。新华社记者 李学仁 摄</p>
+                                <a href="#" class="btn btn-1">Read More</a>
+                                <div class="line"></div>
+                                <div class="post wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name2</p>
+                                        </div>
+                                        <img src="images/8.jpg" />
+                                    </div>
+                                    <div class="wrapper">
+                                        <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                        <div class="info">
+                                            <h6>By <a href="#">Kelvin</a></h6>
+                                            <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                            <span><i class="fa fa-heart"></i>1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name3</p>
+                                        </div>
+                                        <img src="images/9.jpg" />
+                                    </div>
+                                    <div class="wrapper">
+                                        <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                        <div class="info">
+                                            <h6>By <a href="#">Kelvin</a></h6>
+                                            <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                            <span><i class="fa fa-heart"></i>1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name4</p>
+                                        </div>
+                                        <img src="images/6.jpg" />
+                                    </div>
+                                    <div class="wrapper">
+                                        <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                        <div class="info">
+                                            <h6>By <a href="#">Kelvin</a></h6>
+                                            <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                            <span><i class="fa fa-heart"></i>1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name5</p>
+                                        </div>
+                                        <img src="images/9.jpg" />
+                                    </div>
+                                    <h3 class="vid-name"><a href="#">Video's Name</a></h3>
+                                    <div class="info">
+                                        <h5>By <a href="#">Kelvin</a></h5>
+                                        <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                        <span><i class="fa fa-heart"></i>1,200</span>
+                                    </div>
+                                </div>
+                                <p class="more">二、最新新闻视频3月11日晚，中共中央统战部、全国人大民族委员会、国家民族事务委员会、党和国家领导人习近平、李克强、张德江、俞正声、刘云山、王岐山、张高丽等与出席十二。新华社记者 李学仁 摄</p>
+                                <a href="#" class="btn btn-1">Read More</a>
+                                <div class="line"></div>
+                                <div class="post wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+                                           
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name</p>
+                                        </div>
+                                        <img src="images/4.jpg" />
+                                    </div>
+                                    <div class="wrapper">
+                                        <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                        <div class="info">
+                                            <h6>By <a href="#">Kelvin</a></h6>
+                                            <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                            <span><i class="fa fa-heart"></i>1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+                                           
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name</p>
+                                        </div>
+                                        <img src="images/5.jpg" />
+                                    </div>
+                                    <div class="wrapper">
+                                        <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                        <div class="info">
+                                            <h6>By <a href="#">Kelvin</a></h6>
+                                            <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                            <span><i class="fa fa-heart"></i>1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+                                           
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name</p>
+                                        </div>
+                                        <img src="images/2.jpg" />
+                                    </div>
+                                    <div class="wrapper">
+                                        <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                        <div class="info">
+                                            <h6>By <a href="#">Kelvin</a></h6>
+                                            <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                            <span><i class="fa fa-heart"></i>1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="box">
+                    <div class="box-header">
+                        <h2><i class="fa fa-globe"></i> Hot Videos</h2>
+                    </div>
+                    <div class="box-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name</p>
+                                        </div>
+                                        <img src="images/9.jpg" />
+                                    </div>
+                                    <h3 class="vid-name"><a href="#">Video's Name</a></h3>
+                                    <div class="info">
+                                        <h5>By <a href="#">Kelvin</a></h5>
+                                        <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                        <span><i class="fa fa-heart"></i>1,200</span>
+                                    </div>
+                                </div>
+                                <p class="more">两会视频3月11日晚，中共中央统战部、全国人大民族委员会、国家民族事务委员会、党和国家领导人习近平、李克强、张德江、俞正声、刘云山、王岐山、张高丽等与出席十二届全</p>
+                                <a href="#" class="btn btn-1">Read More</a>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="post wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+                                           
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name</p>
+                                        </div>
+                                        <img src="images/4.jpg" />
+                                    </div>
+                                    <div class="wrapper">
+                                        <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                        <div class="info">
+                                            <h6>By <a href="#">Kelvin</a></h6>
+                                            <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                            <span><i class="fa fa-heart"></i>1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+                                           
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name</p>
+                                        </div>
+                                        <img src="images/5.jpg" />
+                                    </div>
+                                    <div class="wrapper">
+                                        <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                        <div class="info">
+                                            <h6>By <a href="#">Kelvin</a></h6>
+                                            <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                            <span><i class="fa fa-heart"></i>1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+                                           
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name</p>
+                                        </div>
+                                        <img src="images/6.jpg" />
+                                    </div>
+                                    <div class="wrapper">
+                                        <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                        <div class="info">
+                                            <h6>By <a href="#">Kelvin</a></h6>
+                                            <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                            <span><i class="fa fa-heart"></i>1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+                                           
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name</p>
+                                        </div>
+                                        <img src="images/7.jpg" />
+                                    </div>
+                                    <div class="wrapper">
+                                        <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                        <div class="info">
+                                            <h6>By <a href="#">Kelvin</a></h6>
+                                            <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                            <span><i class="fa fa-heart"></i>1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="box">
+                    <div class="box-header">
+                        <h2><i class="fa fa-globe"></i> Hot Videos</h2>
+                    </div>
+                    <div class="box-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+                                           
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name</p>
+                                        </div>
+                                        <img src="images/9.jpg" />
+                                    </div>
+                                    <h3 class="vid-name"><a href="#">Video's Name</a></h3>
+                                    <div class="info">
+                                        <h5>By <a href="#">Kelvin</a></h5>
+                                        <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                        <span><i class="fa fa-heart"></i>1,200</span>
+                                    </div>
+                                </div>
+                                <p class="more">两会视频3月11日晚，中共中央统战部、全国人大民族委员会、国家民族事务委员会、党和国家领导人习近平、李克强、张德江、俞正声、刘云山、王岐山、张高丽等与出席十二届全.</p>
+                                <a href="#" class="btn btn-1">Read More</a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="post wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+                                           
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name</p>
+                                        </div>
+                                        <img src="images/4.jpg" />
+                                    </div>
+                                    <div class="wrapper">
+                                        <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                        <div class="info">
+                                            <h6>By <a href="#">Kelvin</a></h6>
+                                            <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                            <span><i class="fa fa-heart"></i>1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+                                           
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name</p>
+                                        </div>
+                                        <img src="images/5.jpg" />
+                                    </div>
+                                    <div class="wrapper">
+                                        <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                        <div class="info">
+                                            <h6>By <a href="#">Kelvin</a></h6>
+                                            <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                            <span><i class="fa fa-heart"></i>1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+                                           
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name</p>
+                                        </div>
+                                        <img src="images/6.jpg" />
+                                    </div>
+                                    <div class="wrapper">
+                                        <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                        <div class="info">
+                                            <h6>By <a href="#">Kelvin</a></h6>
+                                            <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                            <span><i class="fa fa-heart"></i>1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post wrap-vid">
+                                    <div class="zoom-container">
+                                        <div class="zoom-caption">
+                                          
+                                            <a href="#">
+                                                <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                            </a>
+                                            <p>Video's Name</p>
+                                        </div>
+                                        <img src="images/7.jpg" />
+                                    </div>
+                                    <div class="wrapper">
+                                        <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                        <div class="info">
+                                            <h6>By <a href="#">Kelvin</a></h6>
+                                            <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                            <span><i class="fa fa-heart"></i>1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+
+            </div>
+            <div id="sidebar" class="col-md-4">
+                <!---- Start Widget ---->
+                <div class="widget wid-post">
+                    <div class="heading"><h4><i class="fa fa-globe"></i> Category</h4></div>
+                    <div class="content">
+                        <div class="post wrap-vid">
+                            <div class="zoom-container">
+                                <div class="zoom-caption">
+                                 
+                                    <a href="#">
+                                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                    </a>
+                                    <p>Video's Name</p>
+                                </div>
+                                <img src="images/7.jpg" />
+                            </div>
+                            <div class="wrapper">
+                                <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                <div class="info">
+                                    <h6>By <a href="#">Kelvin</a></h6>
+                                    <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                    <span><i class="fa fa-heart"></i>1,200</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post wrap-vid">
+                            <div class="zoom-container">
+                                <div class="zoom-caption">
+                                
+                                    <a href="#">
+                                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                    </a>
+                                    <p>Video's Name</p>
+                                </div>
+                                <img src="images/8.jpg" />
+                            </div>
+                            <div class="wrapper">
+                                <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                <div class="info">
+                                    <h6>By <a href="#">Kelvin</a></h6>
+                                    <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                    <span><i class="fa fa-heart"></i>1,200</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post wrap-vid">
+                            <div class="zoom-container">
+                                <div class="zoom-caption">
+                                  
+                                    <a href="#">
+                                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                    </a>
+                                    <p>Video's Name</p>
+                                </div>
+                                <img src="images/9.jpg" />
+                            </div>
+                            <div class="wrapper">
+                                <h5 class="vid-name"><a href="#">Video's Name</a></h5>
+                                <div class="info">
+                                    <h6>By <a href="#">Kelvin</a></h6>
+                                    <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                    <span><i class="fa fa-heart"></i>1,200</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <!---- Start Widget ---->
+                <div class="widget wid-news">
+                    <div class="heading"><h4><i class="fa fa-clock-o"></i> Top News</h4></div>
+                    <div class="content">
+                        <div class="wrap-vid">
+                            <div class="zoom-container">
+                                <div class="zoom-caption">
+                                 
+                                    <a href="#">
+                                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                    </a>
+                                    <p>Video's Name</p>
+                                </div>
+                                <img src="images/3.jpg" />
+                            </div>
+                            <h3 class="vid-name"><a href="#">Video's Name</a></h3>
+                            <div class="info">
+                                <h5>By <a href="#">Kelvin</a></h5>
+                                <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                <span><i class="fa fa-heart"></i>1,200</span>
+                            </div>
+                        </div>
+                        <div class="wrap-vid">
+                            <div class="zoom-container">
+                                <div class="zoom-caption">
+                                 
+                                    <a href="#">
+                                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                    </a>
+                                    <p>Video's Name</p>
+                                </div>
+                                <img src="images/4.jpg" />
+                            </div>
+                            <h3 class="vid-name"><a href="#">Video's Name</a></h3>
+                            <div class="info">
+                                <h5>By <a href="#">Kelvin</a></h5>
+                                <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                <span><i class="fa fa-heart"></i>1,200</span>
+                            </div>
+                        </div>
+                        <div class="wrap-vid">
+                            <div class="zoom-container">
+                                <div class="zoom-caption">
+                                    <a href="#">
+                                        <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                                    </a>
+                                    <p>Video's Name</p>
+                                </div>
+                                <img src="images/5.jpg" />
+                            </div>
+                            <h3 class="vid-name"><a href="#">Video's Name</a></h3>
+                            <div class="info">
+                                <h5>By <a href="#">Kelvin</a></h5>
+                                <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                <span><i class="fa fa-heart"></i>1,200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <!---- Start Widget ---->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- JS -->
+<script src="js/owl.carousel.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#owl-demo").owlCarousel({
+            autoPlay: 3000,
+            items : 5,
+            itemsDesktop : [1199,4],
+            itemsDesktopSmall : [979,4]
+        });
+
+    });
+</script>
+</header>
+</body>
+</html>
