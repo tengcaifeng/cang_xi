@@ -10,15 +10,12 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="email=no">
-    <link rel="stylesheet" type="text/css" href="css/hd_reset.css">
+  <!--  <link rel="stylesheet" type="text/css" href="css/hd_reset.css">-->
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/hd_animations.css">
     <link rel="stylesheet" type="text/css" href="css/hd_layout.css">
-    <link rel="stylesheet" type="text/css" href="css/hd_page.css">
-    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
-
-
 </head>
-<body style="background-color: rgba(191,238,255,0.89);">
+<body>
 
 <div id="page-hd">
     <div id="loading">
@@ -45,74 +42,67 @@
     </div>
     <img src="img/icon_up.png" alt="" class="arrow-up pt-page-moveIconUp">
 </div>
-<div id="page-content" style="height: 100%;">
-     <div id="zf" class="page page-1 page-current hd_content zf" name="zf">
-         <div style="background-color: rgba(191,238,255,0.89); height: 100%;" class="container">
-             <p style="font-size: 20px;margin-top: 20px;color:#2fd715;">政府服务</p>
+<div id="page-content" style="height: 800px;background-color: #e7f6ff;">
+    <div id="bm" class="page page-1 page-current  hd_content bm" name="bm" >
+        <div  class="container">
+            <p style="font-size: 20px;margin-top: 3px;color:#fd081c;">便民服务</p>
+            <div  class="row">
+                <ul class="container">
+
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="../weather-info/weather.html" target=_parent ><img style="display: inline-block!important;" src="img/weather.png" class="img-circle" alt=""></a><div>天气预报</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="../map/gongjiao.php" target=_parent><img style="display: inline-block!important;" src="img/gongjiao.png" class="img-circle" alt=""></a><div>公交查询</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="../map/fujin.php" target=_parent><img style="display: inline-block!important;" src="img/fujin.png" class="img-circle" alt=""></a><div>附近搜</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="../map/jiache.php" target=_parent><img style="display: inline-block!important;" src="img/jiache.png" class="img-circle" alt=""></a><div>自驾导航</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://m.kuaidi100.com/" target=_parent><img style="display: inline-block!important;" src="img/kuaidi.png" class="img-circle" alt=""></a><div>快递查询</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://youbian.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/yb.png" class="img-circle" alt=""></a><div>邮编查询</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://shouji.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/number.png" class="img-circle" alt=""></a><div>手机号码查询</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://laohuangli.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/rili.png" class="img-circle" alt=""></a><div>老黄历</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://shenfenzheng.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/sfz.png" class="img-circle" alt=""></a><div>省份证查询</div></li>
+               </ul>
+            </div>
+        </div>
+
+    </div>
+    <div id="zy" class="page page-2 hide hd_content zy" name="zy">
+        <div class="container">
+            <p style="font-size: 20px;margin-top: 3px; color:rgba(0,23,253,0.73);">生活工具</p>
+            <div class="row">
+                <ul class="container">
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://fanyi.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/fy.png"  class="img-circle" alt=""></a><div>在线翻译</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://zhoupu.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/zhou.png" class="img-circle" alt=""></a><div>粥谱大全</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://xiangyixiangke.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/shiwu.png" class="img-circle" alt=""></a><div>食物相宜相克</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://yaopin.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/yaoping.png" class="img-circle" alt=""></a><div>药品查询</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://zhongcaoyao.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/zcy.png" class="img-circle" alt=""></a><div>中草药</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://pianfang.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/mj.png" class="img-circle" alt=""></a><div>民间偏方</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://wendu.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/wd.png" class="img-circle" alt=""></a><div>温度转换器</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://changdu.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/cd.png" class="img-circle" alt=""></a><div>长度转换器</div></li>
+                    <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://semangseruo.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/semang.png" class="img-circle" alt=""></a><div>色盲色弱检测</div></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+     <div id="zf" class="page page-3 hide hd_content zf" name="zf">
+         <div  class="container">
+         <p style="font-size: 20px;margin-top: 3px;color:#1ed700;">政府服务</p>
              <div class="row">
                  <ul class="container">
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="../weather-info/index.html" ><img style="display: inline-block!important;" src="../images/weather.jpg" class="img-circle" alt=""></a><div>天气预报</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-02.jpg" class="img-circle" alt=""></a><div>文本文字1</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-03.jpg" class="img-circle" alt=""></a><div>文本文字1</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-04.jpg" class="img-circle" alt=""></a><div>文本文字1</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-05.jpg" class="img-circle" alt=""></a><div>文本文字1</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-06.jpg" class="img-circle" alt=""></a><div>文本文字1</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-07.jpg" class="img-circle" alt=""></a><div>文本文字1</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-08.jpg" class="img-circle" alt=""></a><div>文本文字1</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-09.jpg" class="img-circle" alt=""></a><div>文本文字1</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-10.jpg" class="img-circle" alt=""></a><div>文本文字1</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-11.jpg" class="img-circle" alt=""></a><div>文本文字1</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-12.jpg" class="img-circle" alt=""></a><div>文本文字1</div></li>
+                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://xingzhengquhua.51240.com/" target=_parent ><img style="display: inline-block!important;" src="img/xingzheng.png" class="img-circle" alt=""></a><div>行政区号查询</div></li>
+                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://fangjia.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/fading.png" class="img-circle" alt=""></a><div>法定节假日</div></li>
+                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://airportcode.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/jichang.png" class="img-circle" alt=""></a><div>机场三字码查询</div></li>
+                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://jinyinzoushi.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/jirong.png" class="img-circle" alt=""></a><div>金融走势</div></li>
+                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://jiaotongbiaozhi.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/jiaotong.png" class="img-circle" alt=""></a><div>交通标识</div></li>
+                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="http://m.weizhang8.cn/" target=_parent><img style="display: inline-block!important;" src="img/weather.png" class="img-circle" alt=""></a><div>违章查询</div></li>
+                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://guojiadiqu.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/guojia.png" class="img-circle" alt=""></a><div>国家地图</div></li>
+                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://time.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/shijieshijian.png" class="img-circle" alt=""></a><div>世界时间</div></li>
+                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="https://jieqi.51240.com/" target=_parent><img style="display: inline-block!important;" src="img/jieqi.png" class="img-circle" alt=""></a><div>节气查询</div></li>
                  </ul>
              </div>
          </div>
 
   </div>
-     <div id="zy" class="page page-2 hide hd_content zy" name="zy">
-         <div style="background-color: rgba(191,238,255,0.89);  height: 100%;" class="container">
-             <p style="font-size: 20px;margin-top: 20px; color:rgba(26,38,253,0.73);">重要机构</p>
-             <div class="row">
-                 <ul class="container">
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-01.jpg" class="img-circle" alt=""></a><div>文本文字2</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-02.jpg" class="img-circle" alt=""></a><div>文本文字2</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-03.jpg" class="img-circle" alt=""></a><div>文本文字2</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-04.jpg" class="img-circle" alt=""></a><div>文本文字2</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-05.jpg" class="img-circle" alt=""></a><div>文本文字2</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-06.jpg" class="img-circle" alt=""></a><div>文本文字2</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-07.jpg" class="img-circle" alt=""></a><div>文本文字2</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-08.jpg" class="img-circle" alt=""></a><div>文本文字2</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-09.jpg" class="img-circle" alt=""></a><div>文本文字2</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-10.jpg" class="img-circle" alt=""></a><div>文本文字2</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-11.jpg" class="img-circle" alt=""></a><div>文本文字2</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-12.jpg" class="img-circle" alt=""></a><div>文本文字2</div></li>
-                 </ul>
-             </div>
-         </div>
 
-  </div>
-     <div name="bm" id="bm" class="page page-3 hide hd_content bm" >
-         <div style="background-color: rgba(191,238,255,0.89);  height: 100%;" class="container">
-             <p style="font-size: 20px;margin-top: 20px;color:#fd25dc;">便民服务</p>
-             <div  class="row">
-                 <ul class="container">
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-01.jpg" class="img-circle" alt=""></a><div>文本文字3</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-02.jpg" class="img-circle" alt=""></a><div>文本文字3</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-03.jpg" class="img-circle" alt=""></a><div>文本文字3</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-04.jpg" class="img-circle" alt=""></a><div>文本文字3</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-05.jpg" class="img-circle" alt=""></a><div>文本文字3</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-06.jpg" class="img-circle" alt=""></a><div>文本文字3</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-07.jpg" class="img-circle" alt=""></a><div>文本文字3</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-08.jpg" class="img-circle" alt=""></a><div>文本文字3</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-09.jpg" class="img-circle" alt=""></a><div>文本文字3</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-10.jpg" class="img-circle" alt=""></a><div>文本文字3</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-11.jpg" class="img-circle" alt=""></a><div>文本文字3</div></li>
-                     <li class="col-xs-4 col-sm-3 col-md-2"><a href="#"><img style="display: inline-block!important;" src="images/thumb-12.jpg" class="img-circle" alt=""></a><div>文本文字3</div></li>
-                 </ul>
-                 </ul>
-             </div>
-         </div>
 
-  </div>
 </div>
 <div id="page-ft"></div>
 <script type="text/javascript" src="js/zepto.min.js"></script>
